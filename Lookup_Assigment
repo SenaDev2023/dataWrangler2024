@@ -1,0 +1,14 @@
+public int GetCodeByTextValue(LookupTable lookupTable, string textValue)
+{
+    var lookupItem = lookupTable.Items.FirstOrDefault(item => item.TextValue == textValue);
+
+    if (lookupItem != null)
+    {
+        return lookupItem.Code;
+    }
+    else
+    {
+        // Handle case where textValue is not found (e.g., return default code, throw exception)
+        return -1; // Replace with your desired behavior
+    }
+}

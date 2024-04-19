@@ -1,0 +1,13 @@
+public LookupTable CreateLookupTable()
+{
+    var lookupTable = new LookupTable();
+    lookupTable.Items = new List<LookupItem>();
+
+    // Add your specific text values and codes here
+    lookupTable.Items.Add(new LookupItem { TextValue = "SYSM", Code = 100 });
+    lookupTable.Items.Add(new LookupItem { TextValue = "ERS / TIER I", Code = 100000000 });
+    lookupTable.Items.Add(new LookupItem { TextValue = "ERS / TIER II", Code = 100000001 });
+    // ... Add more entries as needed
+
+    return lookupTable;
+}

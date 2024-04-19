@@ -1,0 +1,10 @@
+public class LookupItem
+{
+    public string TextValue { get; set; }
+    public int Code { get; set; }
+}
+
+public class LookupTable
+{
+    public List<LookupItem> Items { get; set; }
+}
